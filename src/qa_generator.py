@@ -1,6 +1,5 @@
 """模块6：LLM问答生成器"""
 import os
-#os.environ["OPENAI_API_KEY"] = "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"
 from typing import List, Dict, Any
 
 
