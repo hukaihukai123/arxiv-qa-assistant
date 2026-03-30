@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="012a148a-52bb-4765-a7db-b41a50f6a89d" name="Changes" comment="finish the third part-pdf_parser">
-      <change afterPath="$PROJECT_DIR$/src/text_splitter.py" afterDir="false" />
+    <list default="true" id="012a148a-52bb-4765-a7db-b41a50f6a89d" name="Changes" comment="finish the forth part-splitter">
+      <change afterPath="$PROJECT_DIR$/src/qa_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vector_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.arxiv_downloader.executor": "Run",
     "Python.pdf_parser.executor": "Run",
+    "Python.qa_generator.executor": "Run",
     "Python.text_splitter.executor": "Run",
+    "Python.vector_store.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -57,7 +60,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.text_splitter">
+  <component name="RunManager" selected="Python.qa_generator">
     <configuration name="arxiv_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="arxiv-qa-assistant" />
       <option name="ENV_FILES" value="" />
@@ -106,6 +109,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="qa_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="arxiv-qa-assistant" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/qa_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="text_splitter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="arxiv-qa-assistant" />
       <option name="ENV_FILES" value="" />
@@ -130,8 +157,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="vector_store" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="arxiv-qa-assistant" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/vector_store.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.qa_generator" />
+        <item itemvalue="Python.vector_store" />
         <item itemvalue="Python.text_splitter" />
         <item itemvalue="Python.pdf_parser" />
         <item itemvalue="Python.arxiv_downloader" />
@@ -153,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774856492269</updated>
-      <workItem from="1774856493307" duration="7187000" />
+      <workItem from="1774856493307" duration="13872000" />
     </task>
     <task id="LOCAL-00001" summary="finish the third part-pdf_parser">
       <option name="closed" value="true" />
@@ -163,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774866821746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish the forth part-splitter">
+      <option name="closed" value="true" />
+      <created>1774868681376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774868681376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,10 +232,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish the third part-pdf_parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish the third part-pdf_parser" />
+    <MESSAGE value="finish the forth part-splitter" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish the forth part-splitter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/arxiv_qa_assistant$vector_store.coverage" NAME="vector_store Coverage Results" MODIFIED="1774874358669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/arxiv_qa_assistant$arxiv_downloader.coverage" NAME="arxiv_downloader Coverage Results" MODIFIED="1774861296277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/arxiv_qa_assistant$qa_generator.coverage" NAME="qa_generator Coverage Results" MODIFIED="1774875088209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/arxiv_qa_assistant$pdf_parser.coverage" NAME="pdf_parser Coverage Results" MODIFIED="1774866770594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/arxiv_qa_assistant$text_splitter.coverage" NAME="text_splitter Coverage Results" MODIFIED="1774868580493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
