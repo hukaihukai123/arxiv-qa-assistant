@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+*.chroma/
+
+# Data files
+papers/
+*.pdf
+*.jpg
+*.png
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
