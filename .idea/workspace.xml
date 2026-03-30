@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="012a148a-52bb-4765-a7db-b41a50f6a89d" name="Changes" comment="finish the forth part-splitter">
-      <change afterPath="$PROJECT_DIR$/src/qa_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vector_store.py" afterDir="false" />
-    </list>
+    <list default="true" id="012a148a-52bb-4765-a7db-b41a50f6a89d" name="Changes" comment="finish the sixth part" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,21 +17,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "hukaihukai123"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hukaihukai123&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/hukaihukai123/arxiv-qa-assistant.git",
-    "accountId": "41392093-f623-497a-a466-f2982e5214bd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hukaihukai123/arxiv-qa-assistant.git&quot;,
+    &quot;accountId&quot;: &quot;41392093-f623-497a-a466-f2982e5214bd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3BejaQGxCGAzRZZpovmzqcOOZJe" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.arxiv_downloader.executor": "Run",
-    "Python.pdf_parser.executor": "Run",
-    "Python.qa_generator.executor": "Run",
-    "Python.text_splitter.executor": "Run",
-    "Python.vector_store.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.arxiv_downloader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pdf_parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qa_generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_splitter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vector_store.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.qa_generator">
     <configuration name="arxiv_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="arxiv-qa-assistant" />
@@ -206,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774856492269</updated>
-      <workItem from="1774856493307" duration="13872000" />
+      <workItem from="1774856493307" duration="13908000" />
     </task>
     <task id="LOCAL-00001" summary="finish the third part-pdf_parser">
       <option name="closed" value="true" />
@@ -224,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774868681376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish the sixth part">
+      <option name="closed" value="true" />
+      <created>1774875484441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774875484441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish the third part-pdf_parser" />
     <MESSAGE value="finish the forth part-splitter" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish the forth part-splitter" />
+    <MESSAGE value="finish the sixth part" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish the sixth part" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/arxiv_qa_assistant$vector_store.coverage" NAME="vector_store Coverage Results" MODIFIED="1774874358669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
