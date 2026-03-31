@@ -1,8 +1,6 @@
-"""模块6：LLM问答生成器"""
+
 import os
 from typing import List, Dict, Any
-
-
 class QAGenerator:
     def __init__(self, vector_store, model_type="openai", model_name=None):
         self.vector_store = vector_store
@@ -158,41 +156,18 @@ class QAGenerator:
         }
 
     def generate_with_details(self, query: str, top_k: int = 3) -> Dict[str, Any]:
-        """
-        生成答案并返回详细信息（用于调试）
-
-        Returns:
-            包含更多调试信息的字典
-        """
         result = self.generate_answer(query, top_k)
-
-        # 添加提示词信息（用于调试）
         result["prompt"] = self._build_prompt(query, result["contexts"])
 
         return result
-
-
-# 测试代码
 if __name__ == "__main__":
     from vector_store import VectorStore
-
-    # 连接已有的向量数据库
     store = VectorStore(collection_name="test_paper", persist_dir="./chroma_db")
     print(f"数据库统计: {store.get_stats()}")
-
-    # 创建问答生成器
     print("\n" + "=" * 50)
     print("初始化问答生成器...")
     print("=" * 50)
-
-    # 方案1: 使用OpenAI（推荐）
-    # 需要设置环境变量 OPENAI_API_KEY
     qa = QAGenerator(store, model_type="ollama", model_name="llama3.2")
-
-    # 方案2: 使用本地Ollama（免费）
-    # qa = QAGenerator(store, model_type="ollama", model_name="llama3.2")
-
-    # 测试问题
     test_queries = [
         "What is the main contribution of this paper?",
         "What methods were used in this research?",
@@ -202,16 +177,9 @@ if __name__ == "__main__":
     for query in test_queries:
         print("\n" + "=" * 50)
         result = qa.generate_answer(query, top_k=3)
-
         print(f" 问题: {result['query']}")
         print(f" 模型: {result['model']}")
         print(f"\n 答案:\n{result['answer']}")
         print("\n" + "-" * 50)
         print(f" 使用的上下文片段数: {len(result['contexts'])}")
-
-        # 可选：打印使用的片段
-        # for i, ctx in enumerate(result['contexts']):
-        #     print(f"\n片段 {i+1} (分数: {ctx['score']:.4f}):")
-        #     print(f"{ctx['content'][:150]}...")
-
         input("\n按回车继续下一个问题...")
