@@ -180,7 +180,7 @@ streamlit run src/app.py
 MIT License
 
 👨‍💻 作者
-[你的姓名] - 上海交通大学钱学森班
+胡凯 - 上海交通大学钱学森班
 
 🙏 致谢
 ArXiv 提供的论文数据
